@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Ex3 {
 	
-	public ArrayList<Integer> hailstone(int n) {
-		ArrayList<Integer> newArray = new ArrayList<Integer>();
+	public Collection<Integer> hailstone(int n) {
+		Collection<Integer> newArray = new ArrayList<Integer>();
 		newArray.add(n);
 		if(n == 1) {	
 			return newArray;
@@ -22,7 +22,7 @@ public class Ex3 {
 	}
 	
 	public void launch() {
-		ArrayList<Integer> myArray = hailstone(14);
+		Collection<Integer> myArray = hailstone(14);
 		System.out.println(myArray.toString());
 	}
 }
