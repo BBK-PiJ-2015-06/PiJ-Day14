@@ -4,6 +4,11 @@ public class Ex7 {
 	
 	public List<Integer> quicksort(List<Integer> list) {
 		//Step 1: Initial action
+		if(list == null) {
+			List<Integer> emptyList = new ArrayList<Integer>();
+			System.out.println("Error: list is null");
+			return emptyList;
+		}
 		int size = list.size();
 		if(size <= 1) {
 			return list;
