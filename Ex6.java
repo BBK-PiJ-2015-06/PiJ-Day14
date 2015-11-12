@@ -3,10 +3,7 @@ import java.util.*;
 public class Ex6 {
 	
 	public List<Integer> mergesort(List<Integer> list) {
-		if(list.size() == 0) {
-			return list;
-		}
-		if(list.size() == 1) {
+		if(list.size() == 0 || list.size() == 1) {
 			return list;
 		} else {
 			int size = list.size();
